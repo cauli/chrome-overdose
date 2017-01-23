@@ -268,7 +268,7 @@ var playState = {
     for (var i = 0; i < this.polygons.length; i++) {
       var contain = this.polygons[i].contains(game.input.x, game.input.y);
 
-      if (contain && game.input.activePointer.leftButton.isDown && this.graphs[i].alpha > 0) {
+      if (contain && game.input.activePointer.leftButton.isUp && this.graphs[i].alpha > 0) {
         this.fadeOut(this.graphs[i]);
         this.changeColor(this.colors[i]);
 
